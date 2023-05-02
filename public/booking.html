@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBF</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header class="white-background">
+        <a href="home.html"><h1 class="title-black">Glossed Manes</h1></a>
+         <nav class="links">
+             <a class="nav-links" href="services.html">Services</a>
+             <a class="nav-links" href="booking.html">Booking</a>
+         </nav>
+     </header>
+
+     <h1 class="title-white center top-padding">Book A Service</h1>
+
+     
+<form id="appointment-form">   
+    <div>
+        <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+        <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+    </div>  
+    <div>
+        <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+    </div>
+    <select id="service" name="service">
+        <option value="" disabled selected>Select a service</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Coloring">Coloring</option>
+        <option value="Styling">Styling</option>
+        <option value="Perm">Perm</option>
+        <option value="Other">Other</option>
+    </select>
+    <input type="date" id="date" name="date" onchange="showTimeSelector()">
+    <div id="time-selector"  style="display: none;">
+        <select id="time" name="time" required>
+            <option value="" disabled selected>Select a time</option>
+        </select>
+    </div>
+    <button onclick="addAppointment(event)" id="submit">Book Appointment</button>
+</form>
+      <div id="message"></div>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="booking.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background-color: black; 
+    color: white; 
+    padding-top: 125px;
+    font-family: 'Inconsolata', monospace; 
+}
+
+.white-background {
+    background-color: white;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.top-padding {
+    padding-top: 100px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 125px;
+}
+
+.title-black {
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-color: goldenrod;
+    text-decoration-style: solid;
+    font-family: 'Alkatra', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.title-white {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: goldenrod;
+    text-decoration-style: solid;
+    font-family: 'Alkatra', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.links {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  font-size: 27.5px;
+  margin-right: 90px;
+ 
+}
+
+.nav-links {
+    transition: 1s;
+}
+
+.nav-links:hover {
+    color: goldenrod;
+    cursor: pointer;
+    transform: translate(0%, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image {
+    height: 300px; 
+    width: 300px;
+}
+
+
+
+#mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 150px;
+    
+}
+
+.mission-title {
+    font-size: 70px;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 100px;
+}
+
+.info-text {
+    font-size: 25px;
+    margin: 100px;
+}
+
+
+
+
+
+#booking-btn {
+    display: flex;
+    align-items: center;
+    border: 2px solid goldenrod;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    margin-top: 10px;
+}
+
+#booking-btn:hover {
+    background-color: goldenrod;
+}
+
+#about {
+    display: flex;
+    margin: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+
+#slider {
+    display: flex;
+    margin: 30px;
+    gap: 1vmin;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.image {
+	display: flex;
+	width: 20vw;
+	height: 30vh;
+	object-fit: cover;
+  	object-position: 100% center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+.image:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+  
+#appointment-form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+  
+#appointment-form input,
+#appointment-form select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    padding: 15px;
+    margin: 10px 10px;
+    width: 48%;
+    font-size: 1.2rem;
+}
+  
+#appointment-form button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#time-selector {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.viewAllBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid goldenrod;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: goldenrod;
+    color: white;
+}
